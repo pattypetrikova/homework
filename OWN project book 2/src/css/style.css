@@ -1,0 +1,258 @@
+@font-face {font-family: "Tahoma"; 
+    src: url("//db.onlinewebfonts.com/t/f2e23885f804603feafbea12f793dee3.eot"); 
+    src: url("//db.onlinewebfonts.com/t/f2e23885f804603feafbea12f793dee3.eot?#iefix") format("embedded-opentype"), 
+    url("//db.onlinewebfonts.com/t/f2e23885f804603feafbea12f793dee3.woff2") format("woff2"), 
+    url("//db.onlinewebfonts.com/t/f2e23885f804603feafbea12f793dee3.woff") format("woff"), 
+    url("//db.onlinewebfonts.com/t/f2e23885f804603feafbea12f793dee3.ttf") format("truetype"), 
+    url("//db.onlinewebfonts.com/t/f2e23885f804603feafbea12f793dee3.svg#Tahoma") format("svg");
+    font-weight: 400;
+    font-style: normal;
+ }
+
+
+    @font-face {font-family: "TahomaBold"; 
+    src: url("//db.onlinewebfonts.com/t/97a017a71167483ca829dcae362df239.eot"); 
+    src: url("//db.onlinewebfonts.com/t/97a017a71167483ca829dcae362df239.eot?#iefix") format("embedded-opentype"), 
+    url("//db.onlinewebfonts.com/t/97a017a71167483ca829dcae362df239.woff2") format("woff2"), 
+    url("//db.onlinewebfonts.com/t/97a017a71167483ca829dcae362df239.woff") format("woff"), 
+    url("//db.onlinewebfonts.com/t/97a017a71167483ca829dcae362df239.ttf") format("truetype"), 
+    url("//db.onlinewebfonts.com/t/97a017a71167483ca829dcae362df239.svg#Tahoma") format("svg"); 
+    font-weight: 700;
+    font-style: normal;
+ }
+
+ *{
+     box-sizing: border-box;
+     color: #333333;
+     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+ }
+
+ .body {
+     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+
+     }
+
+ .container {
+     max-width: 1140px;
+     margin-left: auto;
+     margin-right: auto;
+     width: 96% ;
+ }
+
+.topheader{
+    padding-top: 160px;
+    padding-bottom: 220px;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.main-image {
+ width: 50%;
+}
+
+.img {
+    width: 100%;
+}
+
+.main-text {
+ width: 50%;
+}
+
+.main-title {
+    font-family: 'TahomaBold';
+    font-size: 48px; 
+    font-weight: 700;
+    margin-bottom: 20px;
+ 
+}
+
+.subtitle{
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 40px;
+    display: block;
+}
+
+.description {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 45px;
+}
+
+.pricetag {
+    font-size: 48px;
+    font-weight: 400;
+    margin-bottom: 80px;
+    display: block;
+ 
+}
+
+.btn {
+    font-family: 'TahomaBold';
+    text-decoration: none;
+    border: #4572D7 solid 2px ;
+    padding: 24px 75px;
+    border-radius: 6px;
+    font-size: 24px;
+    font-weight: 700;
+    margin-right: 30px;
+}
+
+.blue {
+    background-color: #4572D7 ;
+    color: #FFFFFF;
+
+}
+
+.white{
+    background-color: #FFFFFF;
+    color: #4572D7;
+
+}
+
+.shipping {
+    padding-top: 90px;
+    background-color: #F2F2F2;
+    padding-bottom: 90px;
+}
+
+.shipping-title {
+    font-family:'TahomaBold';
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 90px;
+}
+
+.shipping-wrap {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.shipping-item {
+    width: 18%;
+ 
+}
+
+.shipping-item img {
+    padding-bottom: 23px;
+   
+}
+
+
+.title-people {
+    font-family:'TahomaBold';
+    font-size: 30px;
+    font-weight: 700 ;
+    padding-top: 90px;
+    padding-bottom: 70px;
+    text-align: center;
+}
+
+
+.people-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.people-image {
+    width: 23%;
+    margin-bottom: 30px;
+
+}
+
+.people-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.people {
+    padding-bottom: 110px;
+}
+
+@media (max-width: 1200px) {
+
+    .main-image img {
+        max-width: 90%;
+    }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-items: center;
+  }
+
+  .btn {
+      display: inline-block;
+      width: 300px;
+      text-align: center;
+      margin-bottom: 20px;
+  }
+
+   .pricetag {
+       text-align: center;
+       margin-bottom: 50px;
+   }
+
+   .topheader {
+       padding-bottom: 80px;
+       padding-top: 80px;
+   }
+}
+
+
+@media (max-width: 768px) {
+    .main {
+    flex-direction: column;
+    }
+
+
+   .main-text {
+       order: 1;
+   }
+
+   .main-title  {
+       margin-top: 60px;
+   }
+    
+    .shipping-title {
+        margin-bottom: 50px;
+    }
+
+   .shipping-item {
+       width: 50%;
+       margin-top: 50px;
+   }
+
+   .shipping-wrap {
+       flex-wrap: wrap;
+   }
+
+    .people-wrap {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+   .people-image {
+       width: 50%;
+       margin-right: 20px;
+       max-width: 300px;
+       max-height: 300px;
+   }
+
+   .people {
+    padding-bottom: 50px;
+    }
+}
