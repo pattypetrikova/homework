@@ -1,0 +1,386 @@
+@font-face {
+    font-family: 'HelveticaNormal';
+    src: url('../fonts/HelveticaNormal.eot');
+    src: local('0'), url('../fonts/HelveticaNormal.woff') format('woff'), 
+        url('../fonts/HelveticaNormal.ttf') format('truetype'), 
+        url('../fonts/HelveticaNormal.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaBold';
+    src: url('../fonts/HelveticaBold.eot');
+    src: local('0'), url('../fonts/HelveticaBold.woff') format('woff'), 
+        url('../fonts/HelveticaBold.ttf') format('truetype'), 
+        url('../fonts/HelveticaBold.svg') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+ /* platí pro všechny elementy */
+*{
+      /* zajistí aby se vždy elementy vešly do parent containeru */
+    box-sizing: border-box;
+    
+}
+
+.container {
+    max-width: 1140px;
+    width: 96%;
+
+    /* zarovnani celého obsahu containeru na stred */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar {
+    /* Upravuje rozložení contentu v navbaru */
+    justify-content: space-between;
+    /* Pravděpodobně dá contentu inline blokové vlastmosti */
+    display: flex;
+    margin-bottom: 160px;
+}
+
+.logo {
+font-family:'HelveticaBold';
+color: #95989a;
+font-size: 20px; 
+font-weight: 700;
+/* Všechny písmena udělá velké  */
+text-transform: uppercase;
+
+}
+
+.top-header {
+    /* odskok nahoře vnější za ohraničením border */
+    padding-top: 70px;
+    padding-bottom: 190px;
+    background-color: #f4f5f7;
+}
+
+.socials a {
+     /* odstraní ze socials podtržítko */
+    text-decoration: none;
+    /* odskok vlevo vnitřní před ohraničením border */
+    margin-left: 20px;
+
+}
+
+.main{
+      /* dá content vedle sebe */
+    display: flex;
+    /* dále mezi nimi vytvoříme mezeru */
+    justify-content: space-between;
+    /* zarovná text v boxu nastřed */
+    align-items: center;
+}
+
+.main-text{
+     /* zajistí aby text zabíral půlku stránky */
+    width: 50%;
+    color: #32325f;
+}
+
+.main-image{
+    width: 50%;
+}
+
+.main-image img{
+    width: 100%;
+}
+
+.subtitle {
+    font-size: 20px;
+    font-weight: 400;
+       /* odrazí text od textu pod ním o 15 px */
+    margin-bottom: 15px;
+    /* udělá z řádkového blokový element aby fungoval příkaz margin */
+    display: block;
+}
+
+.title{
+    font-family:'HelveticaBold';
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 27px;
+}
+
+.desc{
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 16px;
+    /* rozestupy mezi řádky */
+    line-height: 26px;
+}
+
+.price-tag{
+    font-size: 20px;
+    font-weight: 400;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.price {
+    display: block;
+    font-size: 48px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+.btn {
+    font-family:'HelveticaBold';
+    text-decoration: none; color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 20px 30px;
+    /* zajistí stín za buttonem */
+    box-shadow: 0 3px 6px rgba(173, 173, 173, 0.16);
+    /* zajistí ohnutí rohu u button */
+    border-radius: 6px;
+    margin-right: 30px;
+}
+
+.green {
+    background-color: #2dce89;
+}
+
+.blue {
+
+    background-color: #5e72e4;
+}
+
+.about{
+    padding: 100px 0;
+}
+
+.about-subheadline {
+    font-size: 20px;
+    font-weight: 400;
+    display: block;
+    margin-bottom: 15px;
+    color: #32325f;
+}
+
+.about-headline {
+    font-family:'HelveticaBold';
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 100px;
+    color: #32325f;
+}
+
+.about-wrap{
+    display: flex;
+}
+
+.about-item span {
+display: block;
+color: #525f7f;
+font-size: 16px;
+font-weight: 400;
+margin-right: 35px;
+ /* mezery v textu mezi řádky */
+line-height: 1.2 ;
+}
+
+.about-item {
+    width: 25%;
+}
+
+.about-item img {
+    margin-bottom: 40px;
+   
+}
+
+
+.footer {
+    padding-top: 80px ;
+    padding-bottom: 100px;
+    background-color: #32325f;
+    color: #ffffff;
+}
+
+.footer-link {
+    font-family:'HelveticaBold';
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 7px;
+}
+
+.footer-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-block {
+    width: 33%;
+}
+
+.footer-header {
+    font-family:'HelveticaBold';
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 35px;;
+}
+
+.footer-name {
+    font-family:'HelveticaBold';
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 7px;
+
+}
+
+
+.people {
+    background-color: #f4f5f7;
+    color: #32325f;
+    padding-top: 90px;
+    padding-bottom: 110px;
+}
+
+.people-subtitle {
+    font-size: 20px;
+    font-weight: 400;
+    padding-bottom: 15px;
+    display: block;
+}
+
+.people-title {
+    font-family:'HelveticaBold';
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 65px;
+}
+
+.people-wrap{
+    display: flex;
+     /* zajistí že vše se vejde do obsahu wrapu*/
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.people-image {
+   width: 32%;
+   margin-bottom: 30px;
+   
+}
+
+.people-image img {
+    /* zajistí že obrázek který má jinou velikost se nastyluje stejně w+h+ object fit*/
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* responzivita - max width udává od jakého rozlišení se budou elementy stylovat jinak*/
+@media (max-width: 1024px) {
+
+    /* v devtools vyzkouším jak se chová web při různých rozlišeních
+    - zde začne "blbnout" nejdřív element button*/
+
+
+    .buttons {
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    
+    }
+
+    .btn {
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+        max-width: 250px;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .main-image, .main-text {
+        width: 100%;
+    }
+
+    /* order hodnota speciálně používaná pro responzivitu, přehodí pořadí*/
+    .main-text{
+        order: 1;
+        margin-top: 40px;
+    }
+    .main {
+        flex-direction: column;
+    }
+
+    .navbar {
+        margin-bottom: 100px;
+    }
+
+    .top-header {
+        padding-bottom: 100px;
+    }
+
+    .price {
+        margin-bottom: 30px;
+    }
+
+    .about-item {
+        width: 50%;
+        margin-bottom: 50px;
+    }
+
+    .about-wrap {
+        flex-wrap: wrap;
+    }
+
+    .about {
+        padding: 80px 0px 40px;
+    }
+
+    .people-image {
+        width: 48%;
+    
+    }
+
+    .footer-block {
+        width: 50%;
+        margin-bottom: 70px;
+    }
+
+    .footer-wrap {
+        flex-wrap: wrap;
+    }
+
+  .footer {
+    padding-bottom: 0px;
+}
+}
+
+@media (max-width: 580px) {
+    
+    .about-item {
+        width: 100%;
+    }
+
+    .people-title {
+        margin-bottom: 30px ;
+    }
+    
+    .footer-block {
+    width: 100%;
+    margin-bottom: 70px;
+    }
+
+  .footer {
+      padding-bottom: 0px;
+  }
+
+  .about-headline {
+     margin-bottom: 50px;
+    }
+}
