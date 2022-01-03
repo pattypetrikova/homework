@@ -384,3 +384,12 @@ line-height: 1.2 ;
      margin-bottom: 50px;
     }
 }
+
+.copyright {
+    background-color: #F2F2F2;
+    padding: 30px;
+    text-align: center;
+    font-family: "HelveticaBold";
+    font-weight: 700;
+    color: #32325f;
+}
